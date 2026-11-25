@@ -6,7 +6,7 @@ https://github.com/stephenbradshaw/vulnserver.git
 
 首先把这个项目下载到本地然后打开 , 启动程序以后会开启9999端口 
 <img width="1208" height="644" alt="image" src="https://github.com/user-attachments/assets/0f531174-0ac0-449b-80b2-2357a79a72fc" />
-在`kali`用`nc`连接查看一下 , 有诸多选项 
+在 kali 用 nc 连接查看一下 , 有诸多选项 
 <img width="743" height="675" alt="image" src="https://github.com/user-attachments/assets/d49a0653-70e1-432c-8234-a2b09349a654" />
 #### fuzz测试
 
