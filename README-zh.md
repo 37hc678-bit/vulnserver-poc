@@ -10,11 +10,11 @@ https://github.com/stephenbradshaw/vulnserver.git
 <img width="743" height="675" alt="image" src="https://github.com/user-attachments/assets/d49a0653-70e1-432c-8234-a2b09349a654" />
 #### fuzz测试
 
-基本上就是每个选项都需要 `command argv`这样的形式 , 首先进行一次`fuzz`测试
+基本上就是每个选项都需要  command argv 这样的形式 , 首先进行一次 fuzz 测试
 
 他的参数很多 , 也可以手工测试 , 但是太费时间了
 
-写一个基础的`fuzz`脚本 , 执行之前 , 要把程序本身加载到`windbg`当中
+写一个基础的 fuzz 脚本 , 执行之前 , 要把程序本身加载到 windbg 当中
 
 ```python 
 #!/usr/bin/python
@@ -62,9 +62,9 @@ for cmd in commands:
 
 执行过后会看到输出
 <img width="1091" height="534" alt="image" src="https://github.com/user-attachments/assets/82014e08-c837-400b-986f-875bb8c2e164" />
-查看`windbg` , `eip`已经被覆盖
+查看 windbg  ,  eip 已经被覆盖
 <img width="1443" height="616" alt="image" src="https://github.com/user-attachments/assets/e2ff4783-cadc-4451-b467-707f1aad904f" />
-由此确定问题出在`GTER`参数上 , 由此写一个基础`poc`代码
+由此确定问题出在 GTER 参数上 , 由此写一个基础 poc 代码
 
 ```python
 #!/usr/bin/python
